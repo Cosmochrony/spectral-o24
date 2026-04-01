@@ -1,0 +1,583 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\bstar}{\beta^*}
+\newcommand{\dpair}{\delta_{\mathrm{pair}}}
+\newcommand{\Ntrl}{\mathcal{N}_{\mathrm{trl}}}
+\newcommand{\Aadm}{\mathcal{A}}
+\newcommand{\Obs}{\mathcal{O}}
+\newcommand{\GBI}{G_{\mathrm{BI}}}
+\newcommand{\SBI}{S_{\mathrm{BI}}}
+\newcommand{\ImH}{\operatorname{Im}\mathbb{H}}
+\newcommand{\cchi}{c_\chi}
+
+\begin{document}
+
+  \title{Vertical Non-Injectivity and the Stability of the Observable Rank:\\
+  Closing the Unconditional Transfer
+    $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$\\[6pt]
+    {\large O24 --- Spectral Admissibility Sub-programme}}
+
+  \author{J\'er\^ome Beau\\
+  \small Independent Researcher\\
+  \small \href{mailto:jerome.beau@cosmochrony.org}{jerome.beau@cosmochrony.org}}
+
+  \date{2026}
+
+  \maketitle
+
+  \begin{abstract}
+    O18~\cite{Beau2026a22} established the minimal fibre condition: Born--Infeld parity is the
+    only global symmetry of $\SBI[\chi]$, ensuring that each fibre of the non-injective projection
+    $\Pi$ is exactly $\{\chi, -\chi\}$.
+    O22~\cite{Beau2026a26} proved the shell-alignment conjecture of O21~\cite{Beau2026a25},
+    and O23~\cite{Beau2026a27} derived the threshold condition $\Sigma_c(n_3) = 3$ from the
+    quaternionic maximality of the admissible neutral traceless sector.
+    Together, these results show that the integer~$3$ in $\Sigma_c(n_3) = 3$ is a property of
+    $\operatorname{Im}\Pi \cap \Ntrl$, not of the cardinality of the fibres.
+    The condition of O18 is therefore stronger than necessary: the programme requires only that
+    any symmetry of $\SBI$ acts \emph{vertically} with respect to $\Pi$, i.e.\ does not enlarge
+    the real rank of the admissible neutral traceless sector.
+    The present paper proves this \emph{verticality condition} directly from Born--Infeld
+    admissibility and the quaternionic maximality established in~O23, without requiring a
+    classification of $\mathcal{C}_{\mathrm{eff}}$.
+    As a corollary, the transfer chain
+    \[
+      \cchi \;\longrightarrow\; \dpair \;\longrightarrow\;
+      \bstar = \frac{1}{\dpair + \tfrac{1}{2}} \approx 0.126
+    \]
+    is established unconditionally with respect to the fibre structure of~$\Pi$.
+    Non-injectivity may increase microscopic multiplicity, but cannot enlarge the admissible
+    observable structure.
+  \end{abstract}
+
+  \medskip
+  \noindent\textbf{Keywords.}
+  Cosmochrony; spectral admissibility; non-injective projection; verticality condition;
+  observable rank stability; quaternionic maximality; Born--Infeld constraint;
+  fibre structure; cascade exponent~$\bstar$
+
+  \clearpage
+  \tableofcontents
+
+  \clearpage
+  \section{Position of the Problem after O22--O23}
+    \label{sec:position}
+
+    \subsection{What O18 required and why it was sufficient but not necessary}
+      \label{sec:o18}
+
+      O18~\cite{Beau2026a22} derived the minimal fibre structure of the non-injective projection
+      $\Pi$ from the parity of the Born--Infeld action $\SBI[\chi]$.
+      Its central result (Theorem~3.3 of O18) states that the fibre of $\Pi$ above any
+      observable $o \in \Obs$ contains at least the orbit $\{\chi, -\chi\}$, and that this orbit
+      is the \emph{minimal} fibre under the assumption that Born--Infeld parity is the only global
+      effective symmetry of $\SBI$.
+      Remark~2.6 of O18 acknowledged explicitly that in an enriched framework admitting additional
+      symmetries, the fibre could be larger.
+
+      The condition ``parity is the only symmetry'' was introduced to guarantee minimality of the
+      fibre.
+      It was sufficient for the programme at the time: a minimal fibre $\{\chi, -\chi\}$ ensures
+      that the non-injectivity of $\Pi$ does not create additional observable directions beyond those
+      already present.
+      However, it is stronger than necessary.
+      The programme does not require small fibres; it requires that additional fibre structure, if
+      present, be \emph{invisible at the level of admissible observables}.
+
+    \subsection{The key distinction: fibre cardinality versus observable rank}
+      \label{sec:distinction}
+
+      The results of O22 and O23 clarify the precise invariant that controls the chain
+      $\cchi \to \dpair \to \bstar$.
+      O23~\cite{Beau2026a27} identifies this invariant as
+      \[
+        \dim_{\mathbb{R}}\bigl(\operatorname{Im}\Pi \cap \Ntrl\bigr) = 3,
+      \]
+      where $\Ntrl$ denotes the admissible neutral traceless sector.
+      This is a property of the \emph{image} of $\Pi$, not of its fibres.
+      The integer~$3$ is the real dimension of the imaginary quaternionic subspace $\ImH$,
+      identified in O23 as the unique maximal admissible associative non-commutative structure
+      compatible with Born--Infeld parity.
+
+      Two configurations that lie in the same fibre of $\Pi$ are, by definition, mapped to the same
+      observable.
+      Whether the fibre contains two elements or a continuum, the image of $\Pi$ --- and hence the
+      admissible observable structure --- is unchanged.
+      The cardinality of the fibres and the rank of the image are therefore independent quantities,
+      and it is the rank that governs the mechanism.
+
+    \subsection{The two levels of $\Pi$: kernel and image}
+      \label{sec:twolevels}
+
+      The projection $\Pi$ admits a natural decomposition into two structurally distinct levels.
+
+      The \emph{kernel level} $\ker\Pi$ encodes the microscopic multiplicity: the set of substrate
+      configurations $\chi$ that are indistinguishable at the level of admissible observables.
+      A larger kernel means more microscopic configurations projecting to the same effective state.
+      This does not generate new observable directions; it generates projection residuals, i.e.\
+      substrate degrees of freedom that are compressed by $\Pi$ and manifest as fluctuations in
+      the effective description.
+
+      The \emph{image level} $\operatorname{Im}\Pi$ encodes the effective observable structure: the
+      set of states that are distinguishable by at least one admissible observable.
+      Its intersection with $\Ntrl$ has real rank~$3$ by O23, and this rank is what enters the
+      threshold condition $\Sigma_c(n_3) = 3$ and, downstream, the transfer
+      $\dpair \to \bstar \approx 0.126$.
+
+      The key structural principle is:
+      \begin{quote}
+        \emph{Fluctuations and observables coexist in the same effective space.
+        More residuals do not add new directions to that space; they increase the amplitude of
+        projection noise within the directions already present.}
+      \end{quote}
+
+    \subsection{Scope of O24}
+      \label{sec:scope}
+
+      The present paper proves the \emph{verticality condition}: every symmetry of $\SBI$
+      compatible with admissibility acts vertically with respect to $\Pi$, in the sense that it
+      does not increase the real rank of $\operatorname{Im}\Pi \cap \Ntrl$.
+      The proof uses the quaternionic maximality established in O23 as its central ingredient and
+      does not require a global classification of $\mathcal{C}_{\mathrm{eff}}$.
+
+      The paper does not address the remaining open task of the programme: the extended numerical
+      campaign at large primes $q \in \{101, 151, 211\}$ across multiple conjugate pairs, required
+      to confirm the shell-alignment prediction and reduce the residual distance
+      $\mathrm{dist}(n_3^{\mathrm{obs}}, \mathbb{Z}) \approx 0.20$ observed at $q = 61$.
+
+  \section{The Observable Rank as the Invariant of the Chain}
+    \label{sec:rank}
+
+    \subsection{Recapitulation: maximality from O23}
+      \label{sec:o23recap}
+
+      We recall the central result of O23~\cite{Beau2026a27}.
+
+      \begin{theorem}[O23 Theorem~3.2, Three stable directions from quaternionic maximality]
+        \label{thm:o23}
+        Let $\Pi\colon \chi \to \Obs$ be a non-injective projection compatible with the
+        Born--Infeld constraint, admitting a Weil realisation on $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$.
+        The admissible neutral traceless sector is identified with $\ImH$.
+        The real rank of $\operatorname{Im}\Pi \cap \Ntrl$ is exactly~$3$.
+        Moreover, this rank is \emph{maximal}: $\ImH$ is the unique maximal admissible associative
+        non-commutative structure compatible with Born--Infeld parity, and no admissible realisation
+        of the neutral sector can have real rank greater than~$3$.
+        Consequently, $\Sigma_c(n_3) = 3$.
+      \end{theorem}
+
+      The maximality statement is essential.
+      O23 does not merely establish the \emph{existence} of a quaternionic structure of rank~$3$; it
+      establishes that no admissible structure compatible with Born--Infeld parity can have a
+      higher rank.
+      This maximality is what makes the verticality argument of Section~\ref{sec:verticality}
+      non-circular.
+
+    \subsection{Independence of the observable rank from the fibre structure}
+      \label{sec:independence}
+
+      The following lemma makes the rank--kernel decoupling explicit.
+
+      \begin{lemma}[Rank--kernel decoupling]
+        \label{lem:decoupling}
+        The real rank of $\operatorname{Im}\Pi \cap \Ntrl$ is independent of the cardinality of
+        $\ker\Pi$.
+      \end{lemma}
+
+      \begin{proof}
+        The rank is a property of the image of $\Pi$ as a linear map; it is determined by the dimension
+        of the span of $\Pi(\Aadm)$ within $\Ntrl$.
+        Enlarging $\ker\Pi$ --- i.e.\ increasing the number of substrate configurations that project to
+        the same observable --- leaves the image $\Pi(\Aadm)$ and its intersection with $\Ntrl$
+        unchanged.
+        The rank therefore depends only on the structure of $\operatorname{Im}\Pi$, not on the
+        structure of $\ker\Pi$.
+      \end{proof}
+
+      \begin{remark}
+        Lemma~\ref{lem:decoupling} is linear-algebraic and holds independently of any assumption on
+        the symmetry group $\GBI$.
+        It records the conceptual separation between the two levels of $\Pi$ identified in
+        Section~\ref{sec:twolevels}: kernel structure governs microscopic multiplicity and
+        fluctuation amplitude; image structure governs the observable mechanism.
+      \end{remark}
+
+    \subsection{Residuals and fluctuations as kernel-level phenomena}
+      \label{sec:residuals}
+
+      When the fibre of $\Pi$ above an observable $o$ contains more than the minimal orbit
+      $\{\chi, -\chi\}$, the additional configurations constitute substrate degrees of freedom that
+      are invisible to admissible observables.
+      These degrees of freedom are not lost; they appear as projection residuals in the effective
+      description.
+
+      Formally, let $F_o = \Pi^{-1}(o)$ be the fibre above $o$.
+      The projection decomposes as
+      \[
+        \chi = \chi_{\parallel} + \chi_{\perp},
+      \]
+      where $\chi_{\parallel}$ is the component of $\chi$ in the directions visible to $\Pi$
+      (i.e.\ transverse to $\ker\Pi$) and $\chi_{\perp} \in \ker\Pi$ is the residual.
+      The observable $o = \Pi(\chi)$ depends only on $\chi_{\parallel}$.
+      A larger fibre means a larger space of possible $\chi_{\perp}$ values; it does not modify
+      the effective dynamics of $\chi_{\parallel}$.
+
+      In particular, the cascade exponent $\dpair$, the saturation rank $n_3$, and the transfer
+      $\dpair \to \bstar$ all operate at the level of $\chi_{\parallel}$ --- the observable sector.
+      Projection residuals $\chi_{\perp}$ appear as fluctuations around the effective dynamics but
+      do not alter the mechanism.
+      Fluctuations and observables coexist in the same effective space; additional residuals
+      increase the noise amplitude within that space --- its statistical occupation measure ---
+      not its dimensionality.
+      This is consistent with the identification in O14~\cite{Beau2026a18} Section~6.4 of the
+      residual correction $\epsilon(q)$ as the observable imprint of projection residuals, controlled
+      by the phase variance $\mathrm{Var}(\theta)(q)$: more residuals shift the statistical weight
+      within the observable space, leaving its rank unchanged.
+
+  \section{The Verticality Lemma}
+    \label{sec:verticality}
+
+    \subsection{Setup and statement}
+      \label{sec:setup}
+
+      Let $\GBI$ denote the group of symmetries of $\SBI[\chi]$ compatible with Born--Infeld
+      admissibility.
+      A symmetry $g \in \GBI$ is said to be \emph{admissible} if $g(\Aadm) \subset \Aadm$, i.e.\
+      it maps the admissible sector to itself.
+      All elements of $\GBI$ are admissible by definition; the property is stated explicitly here
+      because it is the key hypothesis used in the proof of Lemma~\ref{lem:verticality}.
+      A symmetry $g \in \GBI$ is said to act \emph{vertically} with respect to $\Pi$ if it maps
+      each fibre $\Pi^{-1}(o)$ to itself, i.e.\ $\Pi(g\chi) = \Pi(\chi)$ for all $\chi \in \Aadm$.
+      A symmetry acts \emph{transversally} if there exists $\chi \in \Aadm$ such that
+      $\Pi(g\chi) \neq \Pi(\chi)$, and moreover
+      $\Pi(g\chi) \notin \mathrm{span}\bigl(\Pi(\Aadm)\bigr)$.
+
+      A transversal symmetry therefore generates a new linearly independent direction in
+      $\operatorname{Im}\Pi \cap \Ntrl$: it strictly increases the real rank of
+      $\operatorname{Im}\Pi \cap \Ntrl$.
+
+      \begin{lemma}[Verticality of admissible symmetries]
+        \label{lem:verticality}
+        Let $g \in \GBI$ be a symmetry of $\SBI[\chi]$ compatible with Born--Infeld admissibility.
+        Then $g$ acts vertically with respect to $\Pi$: it does not increase the real rank of
+        $\operatorname{Im}\Pi \cap \Ntrl$.
+      \end{lemma}
+
+      \begin{proof}
+        Suppose for contradiction that $g$ acts transversally.
+        Then $g$ generates a new linearly independent direction in
+        $\operatorname{Im}\Pi \cap \Ntrl$.
+
+        Since $g \in \GBI$ is admissible, $g(\Aadm) = \Aadm$: any vector generated by the action
+        of $g$ on $\Aadm$ remains in $\Aadm$, and in particular satisfies the Born--Infeld
+        admissibility constraint.
+        Such a direction therefore belongs to the admissible neutral traceless sector characterised
+        in Theorem~\ref{thm:o23}.
+
+        But Theorem~\ref{thm:o23} (O23) establishes that the admissible neutral traceless sector has
+        \emph{maximal} real rank~$3$: $\ImH$ is the unique maximal admissible associative
+        non-commutative structure compatible with Born--Infeld parity.
+        A transversal symmetry generating a 4th independent admissible direction would contradict
+        this maximality.
+        The contradiction shows that $g$ cannot act transversally.
+        Therefore $g$ acts vertically.
+        Thus, no admissible symmetry can increase the dimension of $\operatorname{Im}\Pi \cap \Ntrl$.
+      \end{proof}
+
+    \subsection{Case analysis}
+      \label{sec:cases}
+
+      The proof of Lemma~\ref{lem:verticality} proceeds by contradiction and applies uniformly to
+      all $g \in \GBI$.
+      For clarity, we spell out how the argument applies to the three natural candidate classes of
+      additional symmetries identified in O18 Remark~2.6 and O23 Section~5.2.
+
+      \paragraph{Case 1: Parity $\chi \mapsto -\chi$.}
+        This is the symmetry established in O18~\cite{Beau2026a22}.
+        It maps the fibre $\{\chi, -\chi\}$ to itself and is therefore vertical by definition.
+        It does not generate any new direction in $\operatorname{Im}\Pi$.
+
+      \paragraph{Case 2: Phase rotation $\chi \mapsto e^{i\theta}\chi$.}
+        The substrate field $\chi$ is real by construction in the Cosmochrony
+        framework~\cite{Cosmochrony}.
+        A U(1) phase rotation is therefore not a symmetry of $\SBI[\chi]$ for $\theta \notin \pi\mathbb{Z}$,
+        and reduces to parity for $\theta = \pi$.
+        This class of symmetries does not arise.
+        Even if the field were complexified, such a symmetry would act within fibres unless it generated
+        new independent admissible neutral traceless directions; but any such directions would be
+        excluded by Lemma~\ref{lem:verticality} via the maximality of O23.
+
+      \paragraph{Case 3: Topological symmetries.}
+        The Topological Invariants paper~\cite{Beau2026k} establishes that admissible configurations
+        are classified by discrete topological invariants (winding number, spin structure) that
+        distinguish configurations with distinct invariant values.
+        Configurations with different topological invariants are therefore distinguishable by $\Pi$;
+        they do not lie in the same fibre and cannot be related by a fibre-preserving symmetry.
+        Any topological symmetry that would identify configurations of different winding number would
+        contradict the discrete classification of~\cite{Beau2026k}.
+        Such symmetries are therefore absent from $\GBI$.
+
+        In each case, the conclusion is consistent with Lemma~\ref{lem:verticality}: no element of
+        $\GBI$ acts transversally.
+
+  \subsection{Remark on the non-classificatory character of the argument}
+    \label{sec:nonclassif}
+
+    The proof of Lemma~\ref{lem:verticality} does not enumerate all possible symmetries of
+    $\SBI$.
+    It instead uses the maximality of O23 as a structural obstruction: any transversal symmetry
+    would produce an admissible direction of rank greater than~$3$, which is impossible.
+    This argument is therefore independent of a global classification of $\mathcal{C}_{\mathrm{eff}}$
+    and avoids the topological difficulty identified in Remark~4.2 of~\cite{Beau2026k}.
+
+  \section{Main Results}
+  \label{sec:main}
+
+  \subsection{Observable rank stability}
+    \label{sec:rankstability}
+
+    \begin{theorem}[Observable rank stability]
+      \label{thm:rankstability}
+      Under the Born--Infeld constraint and the Weil realisation on
+      $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$, the real rank of the admissible neutral traceless
+      observable sector $\operatorname{Im}\Pi \cap \Ntrl$ is fixed to~$3$ as a structural invariant of
+      the admissible sector, independently of the cardinality of the fibres of~$\Pi$.
+      Consequently, $\Sigma_c(n_3) = 3$ holds unconditionally with respect to the fibre
+      structure of~$\Pi$.
+      In particular, no admissible enlargement of $\ker\Pi$ can induce any increase in the
+      observable rank.
+    \end{theorem}
+
+    \begin{proof}
+      By Lemma~\ref{lem:decoupling}, the rank of $\operatorname{Im}\Pi \cap \Ntrl$ is independent of
+      $|\ker\Pi|$.
+      By Lemma~\ref{lem:verticality}, every $g \in \GBI$ acts vertically and therefore does not
+      increase this rank.
+      By Theorem~\ref{thm:o23} (O23), the rank is rigidly fixed to~$3$.
+      The combination of these three results gives the claim.
+      The threshold condition $\Sigma_c(n_3) = 3$ is the observable signature of this rank, as
+      established in O23~\cite{Beau2026a27} Section~4.3.
+    \end{proof}
+
+  \subsection{Unconditional transfer}
+    \label{sec:transfer}
+
+    \begin{corollary}[Unconditional transfer $\cchi \to \dpair \to \bstar$]
+      \label{cor:transfer}
+      The chain
+      \[
+        \cchi \;\longrightarrow\; \dpair \;\longrightarrow\;
+        \bstar = \frac{1}{\dpair + \tfrac{1}{2}} \approx 0.126
+      \]
+      is independent of the cardinality of the fibres of $\Pi$.
+      The conditionality of O18 Theorem~3.3 --- which required parity to be the only symmetry
+      of $\SBI$ --- is resolved: the result holds for any $\GBI$-symmetric non-injective projection,
+      provided the verticality condition of Lemma~\ref{lem:verticality} is satisfied.
+      The verticality condition is itself a consequence of the Born--Infeld admissibility constraint
+      and the quaternionic maximality of O23; it requires no additional hypothesis.
+    \end{corollary}
+
+    \begin{proof}
+      The chain $\cchi \to \dpair \to \bstar$ was established conditionally in
+      O21~\cite{Beau2026a25} Theorem~5.1, under the shell-alignment conjecture and the condition
+      that $\Sigma_c(n_3) = 3$.
+      O22~\cite{Beau2026a26} proved the shell-alignment conjecture (projection locking forces
+      saturation onto a BFS shell).
+      Theorem~\ref{thm:rankstability} establishes $\Sigma_c(n_3) = 3$ unconditionally with respect
+      to the fibre structure.
+      The two conditions of O21 Theorem~5.1 are therefore both satisfied unconditionally, and the
+      transfer follows.
+    \end{proof}
+
+    \begin{remark}
+      Corollary~\ref{cor:transfer} does not remove the numerical open direction.
+      The value $\dpair \approx 7.44$ and the shell distance $\mathrm{dist}(n_3^{\mathrm{obs}},
+      \mathbb{Z}) \approx 0.20$ at $q = 61$ are numerical results requiring confirmation at larger
+      primes $q \in \{101, 151, 211\}$ across multiple conjugate pairs.
+      The present result establishes the structural integrity of the chain, not its quantitative
+      precision.
+    \end{remark}
+
+  \section{Discussion}
+  \label{sec:discussion}
+
+  \subsection{What O24 closes and what it does not}
+    \label{sec:closes}
+
+    The present paper closes the last structural conditionality in the chain
+    $\cchi \to \dpair \to \bstar$.
+    The three open problems identified across O21--O23 are now resolved at the structural level:
+
+    \begin{center}
+      \begin{tabular}{lll}
+        \hline
+        Condition & Origin & Status after O24 \\
+        \hline
+        Shell-alignment conjecture & O21 Conj.~4.1 & Resolved by O22 \\
+        $\Sigma_c(n_3) = 3$ & O21 open problem~2 & Resolved by O23 \\
+        Parity = only symmetry of $\SBI$ & O18 Rem.~2.6 & Replaced by verticality, \\
+        & & proved in O24 \\
+        \hline
+      \end{tabular}
+    \end{center}
+
+    What remains open is the extended numerical programme: computing $n_3^{\mathrm{obs}}$ for all
+    conjugate pairs with $\dpair \in [7.4, 10.6]$ across $q \in \{101, 151, 211\}$ using the
+    canonical pair observable of O19~\cite{Beau2026a23}, as described in O22~\cite{Beau2026a26}
+    Section~6.2.
+
+  \subsection{Relation to O18: necessary versus sufficient}
+    \label{sec:o18relation}
+
+    The condition of O18 --- parity is the only global symmetry of $\SBI$ --- was a sufficient
+    condition for the programme at the time it was formulated.
+    It guaranteed that fibres are minimal, which implies in particular that no additional
+    observable directions are created.
+
+    The present paper identifies the \emph{necessary} condition: verticality of all admissible
+    symmetries.
+    Verticality is strictly weaker than fibre minimality: a vertical symmetry may enlarge the
+    fibre without changing the image.
+    The replacement of the sufficient condition (O18) by the necessary and sufficient condition
+    (O24) therefore strictly extends the scope of the programme: the chain
+    $\cchi \to \dpair \to \bstar$ holds not only when fibres are minimal, but whenever
+    additional fibre structure acts vertically.
+
+  \subsection{Vertical versus transversal non-injectivity}
+    \label{sec:vertrans}
+
+    The distinction between vertical and transversal non-injectivity is the structural principle
+    underlying the present paper.
+    It can be stated as a single invariance property:
+
+    \begin{quote}
+      \textbf{Observable rank rigidity under admissible non-injectivity.}
+      \emph{The real rank of $\operatorname{Im}\Pi \cap \Ntrl$ is a protected invariant:
+        $\ker\Pi$ may change freely; $\operatorname{Im}\Pi \cap \Ntrl$ is rigid.}
+    \end{quote}
+
+    \emph{Vertical non-injectivity} means that multiple substrate configurations project to the
+    same observable.
+    This increases the microscopic degeneracy --- the number of configurations in each fibre ---
+    but leaves the observable sector unchanged.
+    Its physical effect is an increase in the amplitude of projection residuals, manifest as
+    fluctuations in the effective description.
+
+    \emph{Transversal non-injectivity} would mean that $\Pi$ fails to distinguish configurations
+    that differ in the observable sector.
+    This would collapse independent observable directions and reduce the rank of
+    $\operatorname{Im}\Pi \cap \Ntrl$ below~$3$.
+    Lemma~\ref{lem:verticality} shows that this case does not arise for any $g \in \GBI$.
+
+    The programme is therefore stable under arbitrary enlargement of the fibres, provided that
+    enlargement is vertical.
+
+  \subsection{Fluctuations as kernel-level residuals}
+    \label{sec:fluctuations}
+
+    Section~\ref{sec:residuals} identified projection residuals as the physical consequence of
+    vertical non-injectivity.
+    A larger fibre produces a larger space of substrate configurations that are invisible to
+    admissible observables; their contribution appears as fluctuations in the effective
+    description.
+
+    Crucially, these fluctuations inhabit the same effective space as the observables.
+    They do not create a new sector; they add noise to the existing one.
+    The cascade exponent $\dpair$, the saturation rank $n_3$, and the threshold condition
+    $\Sigma_c(n_3) = 3$ are all properties of the observable sector and are unaffected by the
+    amplitude of projection noise.
+
+    This is consistent with the interpretation developed in O14~\cite{Beau2026a18} Section~6.4,
+    where the residual correction $\epsilon(q)$ is identified as the observable imprint of
+    projection residuals, controlled by the phase variance $\mathrm{Var}(\theta)(q)$.
+    The present result provides the structural justification for this interpretation: projection
+    residuals are precisely the kernel-level degrees of freedom of $\Pi$, and their effect on
+    observables is bounded by the rank stability established in
+    Theorem~\ref{thm:rankstability}.
+
+  \section{Conclusion}
+  \label{sec:conclusion}
+
+  The present paper has established that the transfer chain
+  $\cchi \to \dpair \to \bstar \approx 0.126$ holds unconditionally with respect to the fibre
+  structure of the non-injective projection $\Pi$.
+  The key result is the Verticality Lemma (Lemma~\ref{lem:verticality}): every Born--Infeld-admissible
+  symmetry acts vertically with respect to $\Pi$, so that no admissible symmetry can enlarge
+  the real rank of the observable sector beyond~$3$.
+
+  The argument is non-classificatory.
+  It does not enumerate all symmetries of $\SBI$ or classify the full space
+  $\mathcal{C}_{\mathrm{eff}}$.
+  It uses a single structural obstruction: the quaternionic maximality established in
+  O23~\cite{Beau2026a27}, which ensures that no admissible direction of rank greater than~$3$
+  can exist.
+
+  The conceptual reorientation relative to O18 is:
+  \begin{quote}
+    \emph{The condition of O18 required fibres to be small.
+    The present result shows that fibre size is physically irrelevant:
+    non-injectivity affects degeneracy, not structure.}
+  \end{quote}
+
+  With O22, O23, and the present paper, all structural conditionalities in the O-series chain
+  are resolved.
+  The programme now reduces to a single remaining task: the extended numerical campaign at
+  large primes, which will determine whether the shell-alignment prediction is quantitatively
+  confirmed and reduce the residual uncertainty in $\dpair$ and $\bstar$.
+
+  \appendix
+
+  \section{Classification of Symmetry Actions: Vertical and Transversal}
+  \label{app:examples}
+
+  This appendix collects the three natural candidate classes of additional symmetries of $\SBI$
+  and verifies in each case that the action is vertical, supplementing the case analysis of
+  Section~\ref{sec:cases}.
+
+  \paragraph{A.1 Parity $\chi \mapsto -\chi$.}
+    The Born--Infeld action is even in $\chi$: $\SBI[-\chi] = \SBI[\chi]$.
+    Parity therefore belongs to $\GBI$.
+    For any observable $o = \Pi(\chi)$, the definition of the fibre ensures
+    $\Pi(-\chi) = \Pi(\chi) = o$ (since $-\chi$ and $\chi$ are identified by the Born--Infeld
+    indiscernability established in O18~\cite{Beau2026a22}).
+    Parity acts vertically.
+
+  \paragraph{A.2 Phase rotation U(1).}
+    The substrate field $\chi\colon \mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z}) \to \mathbb{R}$ is
+    real-valued by construction~\cite{Cosmochrony}.
+    The Born--Infeld kinetic term $F^2 = (D\chi)^2$ is manifestly real and does not admit a
+    U(1) phase symmetry $\chi \mapsto e^{i\theta}\chi$ for $\theta \notin \pi\mathbb{Z}$.
+    This class of symmetries is absent from $\GBI$ and requires no further analysis.
+
+  \paragraph{A.3 Topological winding symmetries.}
+    The Topological Invariants paper~\cite{Beau2026k} establishes that admissible configurations
+    carry discrete topological invariants: charge as a winding invariant (Section~2 of~\cite{Beau2026k}) and spin as
+    a covering invariant (Section~3 of~\cite{Beau2026k}).
+    Two configurations with distinct winding numbers are distinguished by $\Pi$: they project to
+    distinct observables.
+    A symmetry that would identify them --- mapping a configuration of winding number $w$ to one
+    of winding number $w' \neq w$ --- would contradict the discrete classification of~\cite{Beau2026k} and would not
+    be compatible with Born--Infeld admissibility.
+    Such symmetries are absent from $\GBI$.
+
+    In all three cases, no transversal action on the admissible observable sector arises.
+    The verticality of $\GBI$ established in Lemma~\ref{lem:verticality} is therefore consistent
+    with the full catalogue of natural candidate symmetries.
+
+    \clearpage
+    \begin{thebibliography}{99}
+      \input{cosmochrony-bibliography}
+    \end{thebibliography}
+
+\end{document}
