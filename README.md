@@ -1,6 +1,6 @@
 This repository contains the source of the **O24 Cosmochrony paper**  
-[*Vertical Non-Injectivity and the Stability of the Observable Rank:
-Closing the Unconditional Transfer cχ → δpair → β∗$*](out/SpectralO24.pdf).
+*Vertical Non-Injectivity and the Stability of the Observable Rank:
+Closing the Unconditional Transfer cχ → δpair → β∗$*.
 
 This work extends the **spectral admissibility sub-programme** by resolving
 the final residual structural condition inherited from **O18** after the
@@ -102,7 +102,7 @@ independently of the cardinality of the fibres of $\Pi$.
 
 *Corollary.*
 
-$c_\chi \to \delta_{\mathrm{pair}} \to \beta^*
+$c_{\mathrm{BI}} \to \delta_{\mathrm{pair}} \to \beta^*
 = \frac{1}{\delta_{\mathrm{pair}} + \tfrac{1}{2}} \approx 0.126$
 
 holds **unconditionally**, with no assumption on fibre size.
@@ -136,7 +136,7 @@ More precisely, the paper:
 - excludes transversal admissible actions via maximality
 - establishes observable rank rigidity
 - removes dependence on fibre cardinality
-- closes the $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$ chain
+- closes the $c_{\mathrm{BI}} \to \delta_{\mathrm{pair}} \to \beta^*$ chain
 
 ## Epistemic Structure of the Paper
 
@@ -280,7 +280,7 @@ If you reference this work, please cite:
 
 J. Beau
 Vertical Non-Injectivity and the Stability of the Observable Rank:
-Closing the Unconditional Transfer $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$
+Closing the Unconditional Transfer $c_{\mathrm{BI}} \to \delta_{\mathrm{pair}} \to \beta^*$
 Zenodo, 2026.
 
 # Acknowledgements
