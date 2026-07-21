@@ -1,6 +1,6 @@
 This repository contains the source of the **O24 Cosmochrony paper**  
 *Vertical Non-Injectivity and the Stability of the Observable Rank:
-Closing the Unconditional Transfer cχ → δpair → β∗$*.
+Closing the Unconditional Transfer $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$*.
 
 This work extends the **spectral admissibility sub-programme** by resolving
 the final residual structural condition inherited from **O18** after the
