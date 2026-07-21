@@ -105,7 +105,9 @@ independently of the cardinality of the fibres of $\Pi$.
 $c_{\mathrm{BI}} \to \delta_{\mathrm{pair}} \to \beta^*
 = \frac{1}{\delta_{\mathrm{pair}} + \tfrac{1}{2}} \approx 0.126$
 
-holds **unconditionally**, with no assumption on fibre size.
+holds **unconditionally with respect to the fibre structure of $\Pi$** — with no assumption on fibre size.
+It remains conditional on the O4–O6 growth-equation closure and coupling hypotheses, the Weil realisation,
+and the power-law regime; the numerical value remains open pending $\delta_\infty$.
 
 ## Foundational Chain from the Substrate
 
@@ -232,7 +234,7 @@ The admissibility condition is now:
 - fully structural
 - algebraically constrained
 - rank-invariant
-- unconditional
+- unconditional with respect to the fibre structure of $\Pi$
 
 ## Residual Open Problems
 
