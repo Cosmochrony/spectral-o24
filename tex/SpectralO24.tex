@@ -1,10 +1,16 @@
 \documentclass[11pt,a4paper]{article}
 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{hyperref}
 \usepackage{geometry}
 \usepackage{doi}
 \geometry{margin=2.5cm}
+
+\input{glyphtounicode}
+\pdfgentounicode=1
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
@@ -25,25 +31,25 @@
 
 \begin{document}
 
-  \title{Vertical Non-Injectivity and the Stability of the Observable Rank:\\
-  Closing the Unconditional Transfer
-    $c_{\mathrm{BI}} \to \delta_{\mathrm{pair}} \to \beta^*$\\[6pt]
+  \title{Observable-Rank Stability under Vertical Non-Injectivity:\\
+  Closing the Fibre-Structure Conditionality in the
+  Born--Infeld-to-Cascade Chain\\[6pt]
     {\large O24 --- Spectral Admissibility Sub-programme}}
 
   \author{J\'er\^ome Beau\\
   \small Independent Researcher\\
   \small \href{mailto:jerome.beau@cosmochrony.org}{jerome.beau@cosmochrony.org}}
 
-  \date{2026}
+  \date{2026\\Version 1.2.0}
 
   \maketitle
 
   \begin{abstract}
-    O18~\cite{Beau2026a22} established the minimal fibre condition: Born--Infeld parity is the
+    O18 established the minimal fibre condition: Born--Infeld parity is the
     only global symmetry of $\SBI[\chi]$, ensuring that each fibre of the non-injective projection
     $\Pi$ is exactly $\{\chi, -\chi\}$.
-    O22~\cite{Beau2026a26} proved the shell-alignment conjecture of O21~\cite{Beau2026a25},
-    and O23~\cite{Beau2026a27} derived the threshold condition $\Sigma_c(n_3) = 3$ from the
+    O22 proved the shell-alignment conjecture of O21,
+    and O23 derived the threshold condition $\Sigma_c(n_3) = 3$ from the
     quaternionic maximality of the admissible neutral traceless sector.
     Together, these results show that the integer~$3$ in $\Sigma_c(n_3) = 3$ is a property of
     $\operatorname{Im}\Pi \cap \Ntrl$, not of the cardinality of the fibres.
@@ -53,12 +59,12 @@
     The present paper proves this \emph{verticality condition} directly from Born--Infeld
     admissibility and the quaternionic maximality established in~O23, without requiring a
     classification of $\mathcal{C}_{\mathrm{eff}}$.
-    As a corollary, the transfer chain
-    \[
-      \cchi \;\longrightarrow\; \dpair \;\longrightarrow\;
-      \bstar = \frac{1}{\dpair + \tfrac{1}{2}} \approx 0.126
-    \]
-    is established unconditionally with respect to the fibre structure of~$\Pi$.
+    As a corollary, the fibre-structure conditionality in the
+    $\cchi \to \dpair$ segment is closed: its observable rank is
+    independent of fibre cardinality.
+    This does not establish the separate
+    $\dpair \to \bstar$ capacity-to-rate step, for which no native
+    Heisenberg growth carrier is defined in the corpus.
     Non-injectivity may increase microscopic multiplicity, but cannot enlarge the admissible
     observable structure.
   \end{abstract}
@@ -100,8 +106,8 @@
     \subsection{The key distinction: fibre cardinality versus observable rank}
       \label{sec:distinction}
 
-      The results of O22 and O23 clarify the precise invariant that controls the chain
-      $\cchi \to \dpair \to \bstar$.
+      The results of O22 and O23 clarify the precise invariant that controls the fibre-side
+      $\cchi \to \dpair$ segment.
       O23~\cite{Beau2026a27} identifies this invariant as
       \[
         \dim_{\mathbb{R}}\bigl(\operatorname{Im}\Pi \cap \Ntrl\bigr) = 3,
@@ -134,8 +140,8 @@
       The \emph{image level} $\operatorname{Im}\Pi$ encodes the effective observable structure: the
       set of states that are distinguishable by at least one admissible observable.
       Its intersection with $\Ntrl$ has real rank~$3$ by O23, and this rank is what enters the
-      threshold condition $\Sigma_c(n_3) = 3$ and, downstream, the transfer
-      $\dpair \to \bstar \approx 0.126$.
+      threshold condition $\Sigma_c(n_3) = 3$.
+      Its insertion into a capacity-to-rate law is a separate step.
 
       The key structural principle is:
       \begin{quote}
@@ -371,34 +377,34 @@
       established in O23~\cite{Beau2026a27} Section~4.3.
     \end{proof}
 
-  \subsection{Unconditional transfer}
+  \subsection{Fibre-structure closure and transfer boundary}
     \label{sec:transfer}
 
-    \begin{corollary}[Unconditional transfer $\cchi \to \dpair \to \bstar$]
+    \begin{corollary}[Fibre-structure closure for $\cchi \to \dpair$]
       \label{cor:transfer}
-      The chain
-      \[
-        \cchi \;\longrightarrow\; \dpair \;\longrightarrow\;
-        \bstar = \frac{1}{\dpair + \tfrac{1}{2}} \approx 0.126
-      \]
-      is independent of the cardinality of the fibres of $\Pi$.
+      The observable-rank condition supporting the fibre-side segment
+      $\cchi \to \dpair$ is independent of the cardinality of the
+      fibres of $\Pi$.
       The conditionality of O18 Theorem~3.3 --- which required parity to be the only symmetry
-      of $\SBI$ --- is resolved: the result holds for any $\GBI$-symmetric non-injective projection,
+      of $\SBI$ --- is resolved with respect to this fibre-side result:
+      it holds for any $\GBI$-symmetric non-injective projection,
       provided the verticality condition of Lemma~\ref{lem:verticality} is satisfied.
       The verticality condition is itself a consequence of the Born--Infeld admissibility constraint
       and the quaternionic maximality of O23; it requires no additional hypothesis.
     \end{corollary}
 
     \begin{proof}
-      The chain $\cchi \to \dpair \to \bstar$ was established conditionally in
+      The fibre-side conditions were formulated in
       O21~\cite{Beau2026a25} Theorem~5.1, under the shell-alignment conjecture and the condition
       that $\Sigma_c(n_3) = 3$.
       O22~\cite{Beau2026a26} proved the shell-alignment conjecture (projection locking forces
       saturation onto a BFS shell).
       Theorem~\ref{thm:rankstability} establishes $\Sigma_c(n_3) = 3$ unconditionally with respect
       to the fibre structure.
-      The two conditions of O21 Theorem~5.1 are therefore both satisfied unconditionally, and the
-      transfer follows.
+      These two conditions are therefore satisfied unconditionally with respect to fibre
+      structure, proving the stated rank stability.
+      They do not supply O21's independent cross-substrate growth condition, and hence do not
+      establish a native $\dpair \to \bstar$ transfer~\cite{Beau2026sgn}.
     \end{proof}
 
     \begin{remark}
@@ -406,8 +412,10 @@
       The value $\dpair \approx 7.44$ and the shell distance $\mathrm{dist}(n_3^{\mathrm{obs}},
       \mathbb{Z}) \approx 0.20$ at $q = 61$ are numerical results requiring confirmation at larger
       primes $q \in \{101, 151, 211\}$ across multiple conjugate pairs.
-      The present result establishes the structural integrity of the chain, not its quantitative
-      precision.
+      The value $7.44$ uses the production $\log(n+1)$ convention.
+      On the same finite windows, translation to $\log n$ gives approximately $6.6$--$6.9$.
+      The reciprocal value remains a phenomenological coincidence check, not a structural
+      derivation~\cite{Beau2026sgn}.
     \end{remark}
 
   \section{Discussion}
@@ -416,9 +424,9 @@
   \subsection{What O24 closes and what it does not}
     \label{sec:closes}
 
-    The present paper closes the last structural conditionality in the chain
-    $\cchi \to \dpair \to \bstar$.
-    The three open problems identified across O21--O23 are now resolved at the structural level:
+    The present paper closes the last fibre-structure conditionality in the
+    $\cchi \to \dpair$ segment.
+    Three fibre-side problems identified across O21--O23 are resolved:
 
     \begin{center}
       \begin{tabular}{lll}
@@ -429,14 +437,13 @@
         $\Sigma_c(n_3) = 3$ & O21 open problem~2 & Resolved by O23 \\
         Parity = only symmetry of $\SBI$ & O18 Rem.~2.6 & Replaced by verticality, \\
         & & proved in O24 \\
+        Native pair-capacity growth carrier & SGN & Not supplied by O22--O24 \\
         \hline
       \end{tabular}
     \end{center}
 
-    What remains open is the extended numerical programme: computing $n_3^{\mathrm{obs}}$ for all
-    conjugate pairs with $\dpair \in [7.4, 10.6]$ across $q \in \{101, 151, 211\}$ using the
-    canonical pair observable of O19~\cite{Beau2026a23}, as described in O22~\cite{Beau2026a26}
-    Section~6.2.
+    The capacity-to-rate step remains open at the level of new model construction and refuted as
+    a native composite for the corpus-defined Heisenberg objects~\cite{Beau2026sgn}.
 
   \subsection{Relation to O18: necessary versus sufficient}
     \label{sec:o18relation}
@@ -451,9 +458,8 @@
     Verticality is strictly weaker than fibre minimality: a vertical symmetry may enlarge the
     fibre without changing the image.
     The replacement of the sufficient condition (O18) by the necessary and sufficient condition
-    (O24) therefore strictly extends the scope of the programme: the chain
-    $\cchi \to \dpair \to \bstar$ holds not only when fibres are minimal, but whenever
-    additional fibre structure acts vertically.
+    (O24) therefore strictly extends the scope of the fibre-side result: observable-rank stability
+    holds not only when fibres are minimal, but whenever additional fibre structure acts vertically.
 
   \subsection{Vertical versus transversal non-injectivity}
     \label{sec:vertrans}
@@ -495,24 +501,23 @@
 
     Crucially, these fluctuations inhabit the same effective space as the observables.
     They do not create a new sector; they add noise to the existing one.
-    The cascade exponent $\dpair$, the saturation rank $n_3$, and the threshold condition
+    The pair-capacity exponent $\dpair$, the saturation rank $n_3$, and the threshold condition
     $\Sigma_c(n_3) = 3$ are all properties of the observable sector and are unaffected by the
     amplitude of projection noise.
 
     This is consistent with the interpretation developed in O14~\cite{Beau2026a18} Section~6.4,
-    where the residual correction $\epsilon(q)$ is identified as the observable imprint of
+    where the residual correction $\epsilon(q)$ is proposed as the observable imprint of
     projection residuals, controlled by the phase variance $\mathrm{Var}(\theta)(q)$.
     The present result provides the structural justification for this interpretation: projection
-    residuals are precisely the kernel-level degrees of freedom of $\Pi$, and their effect on
-    observables is bounded by the rank stability established in
-    Theorem~\ref{thm:rankstability}.
+    rank stability is compatible with that interpretation, but does not derive the estimator-level
+    correction or its insertion into a reciprocal law.
 
   \section{Conclusion}
   \label{sec:conclusion}
 
-  The present paper has established that the transfer chain
-  $\cchi \to \dpair \to \bstar \approx 0.126$ holds unconditionally with respect to the fibre
-  structure of the non-injective projection $\Pi$.
+  The present paper establishes that the observable-rank condition in the fibre-side
+  $\cchi \to \dpair$ segment is independent of the cardinality of the fibres of the
+  non-injective projection $\Pi$.
   The key result is the Verticality Lemma (Lemma~\ref{lem:verticality}): every Born--Infeld-admissible
   symmetry acts vertically with respect to $\Pi$, so that no admissible symmetry can enlarge
   the real rank of the observable sector beyond~$3$.
@@ -531,22 +536,20 @@
     non-injectivity affects degeneracy, not structure.}
   \end{quote}
 
-  With O22, O23, and the present paper, all structural conditionalities in the O-series chain
-  are resolved.
-  The programme now reduces to a single remaining task: the extended numerical campaign at
-  large primes, which will determine whether the shell-alignment prediction is quantitatively
-  confirmed and reduce the residual uncertainty in $\dpair$ and $\bstar$.
+  O22, O23, and the present paper close the named fibre-structure conditionalities.
+  They do not derive the separate Heisenberg capacity-to-rate bridge.
 
   \paragraph{Status update (O25 extension to $q = 601$).}
     That campaign has since been carried out in O25~\cite{Beau2026a29}.
-    An extended pair-capacity campaign up to $q = 601$ confirms that the transfer parameter
-    inferred from the pair observable remains in the expected $0.11$--$0.13$ range, while the
+    An extended pair-capacity campaign up to $q = 601$ finds that the reciprocal parameter
+    computed from the pair observable remains in the reference $0.11$--$0.13$ range, while the
     underlying \emph{raw} exponent $\dpair(q)$ itself descends into the admissible window
     $[7.4, 10.6]$ as $q$ grows --- reaching $\approx 7.6$ at $q = 601$ --- without requiring the
     finite-size normalization correction used on the earliest (small-$q$) datasets.
-    The transfer chain $\cchi \to \dpair \to \bstar$ is thereby confirmed numerically; the exact
-    asymptotic value $\delta_\infty$ (and hence the precise value of $\bstar$ within that band)
-    remains open, as competing convergence laws are not yet distinguished at $q \le 601$.
+    This is a phenomenological consistency check under the cross-substrate prescription, not a
+    confirmation of a native transfer.
+    Moreover, the production $\log(n+1)$ convention inflates the finite-window exponent relative
+    to $\log n$; the asymptotic value $\delta_\infty$ remains open~\cite{Beau2026sgn}.
 
   \appendix
 

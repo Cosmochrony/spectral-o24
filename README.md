@@ -1,9 +1,12 @@
 This repository contains the source of the **O24 Cosmochrony paper**  
-*Vertical Non-Injectivity and the Stability of the Observable Rank:
-Closing the Unconditional Transfer $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$*.
+*Observable-Rank Stability under Vertical Non-Injectivity:
+Closing the Fibre-Structure Conditionality in the Born–Infeld-to-Cascade Chain*.
+
+**Version 1.2.0.** The verticality lemma and observable-rank stability theorem are unchanged.
+The paper now separates their fibre-structure closure from the independent Heisenberg capacity-to-rate step.
 
 This work extends the **spectral admissibility sub-programme** by resolving
-the final residual structural condition inherited from **O18** after the
+the residual fibre-cardinality condition inherited from **O18** after the
 closures achieved by **O22** and **O23**:
 
 > Does the admissibility mechanism depend on the cardinality of the fibres
@@ -13,7 +16,7 @@ closures achieved by **O22** and **O23**:
 
 **O21–O23** established that:
 
-- the physically relevant observable is the canonical fibre-level quantity  
+- the proposed fibre-level observable is the canonical pair quantity
   $\sigma_{\mathrm{pair}}^{\mathrm{can}}(n)$
 - saturation occurs intrinsically on a BFS shell (**O22**, projection locking)
 - the threshold value  
@@ -25,13 +28,13 @@ However:
 - **O18** required the strong condition that parity is the *only*
   symmetry of $S_{\mathrm{BI}}$
 - this ensured that fibres are minimal: $\{\chi, -\chi\}$
-- the full programme still depended on this assumption
+- the fibre-side observable-rank argument still depended on this assumption
 
 This defines the scope of **O24**.
 
 ## Core Result
 
-The paper proves that **the size of the fibres is physically irrelevant**.
+The paper proves that **the size of the fibres is irrelevant to the stated observable-rank result**.
 
 The key mechanism is the **verticality of admissible symmetries**:
 
@@ -98,20 +101,19 @@ $\dim_{\mathbb{R}}(\operatorname{Im}\Pi \cap \mathcal{N}_{\mathrm{trl}}) = 3$
 
 independently of the cardinality of the fibres of $\Pi$.
 
-### 5. Unconditional transfer
+### 5. Fibre-structure closure
 
-*Corollary.*
+*Corollary.* The observable-rank condition supporting the fibre-side
+$c_{\mathrm{BI}} \to \delta_{\mathrm{pair}}$ segment holds unconditionally with respect to the
+fibre structure of $\Pi$, with no assumption on fibre size.
 
-$c_{\mathrm{BI}} \to \delta_{\mathrm{pair}} \to \beta^*
-= \frac{1}{\delta_{\mathrm{pair}} + \tfrac{1}{2}} \approx 0.126$
-
-holds **unconditionally with respect to the fibre structure of $\Pi$** — with no assumption on fibre size.
-It remains conditional on the O4–O6 growth-equation closure and coupling hypotheses, the Weil realisation,
-and the power-law regime; the numerical value remains open pending $\delta_\infty$.
+The separate $\delta_{\mathrm{pair}} \to \beta^*$ step is not derived natively on the Heisenberg substrate.
+Using $1/(\delta_{\mathrm{pair}}+\tfrac12)$ therefore remains a conditional cross-substrate
+phenomenological prescription.
 
 ## Foundational Chain from the Substrate
 
-The derivation is fully internal:
+Within the stated Born--Infeld and quaternionic-maximality premises, the fibre-side argument is internal:
 
 Born–Infeld admissibility  
 $\to$ admissible sector invariance  
@@ -119,9 +121,10 @@ $\to$ quaternionic maximality (O23)
 $\to$ exclusion of transversal directions  
 $\to$ verticality of symmetries  
 $\to$ rank invariance  
-$\to$ unconditional transfer
+$\to$ fibre-side rank stability
 
-No structural assumption on fibres is required.
+No minimal-cardinality assumption on fibres is required for that result.
+The chain does not produce a native pair-capacity growth carrier.
 
 ## Mathematical Role of O24
 
@@ -138,7 +141,7 @@ More precisely, the paper:
 - excludes transversal admissible actions via maximality
 - establishes observable rank rigidity
 - removes dependence on fibre cardinality
-- closes the $c_{\mathrm{BI}} \to \delta_{\mathrm{pair}} \to \beta^*$ chain
+- closes the fibre-cardinality conditionality in the $c_{\mathrm{BI}} \to \delta_{\mathrm{pair}}$ segment
 
 ## Epistemic Structure of the Paper
 
@@ -157,7 +160,7 @@ More precisely, the paper:
 - verticality lemma
 - exclusion of transversal admissible symmetries
 - observable rank stability theorem
-- unconditional transfer corollary
+- fibre-structure closure corollary
 
 ### Remaining open problems
 
@@ -166,6 +169,7 @@ More precisely, the paper:
 - extension beyond SU(2)-type structures
 - dynamical modelling of fluctuations
 - full numerical closure of the pipeline
+- a native growth process carrying the pair observable
 
 ## Interpretation of the Result
 
@@ -190,7 +194,7 @@ The key insight is:
 
 ## Structural Role of O24
 
-**O24** completes the sequence:
+**O24** completes the fibre-structure sequence:
 
 - **O18**: fibre structure
 - **O19**: canonical normalisation
@@ -207,7 +211,7 @@ Thus:
 - the threshold is explained
 - the fibre dependence is removed
 
-This closes the admissibility framework.
+This closes the dependence on fibre cardinality, not the capacity-to-rate bridge.
 
 ## What O24 Adds
 
@@ -216,7 +220,7 @@ This closes the admissibility framework.
 - exclusion of transversal admissible symmetries
 - observable rank rigidity
 - independence from fibre cardinality
-- theorem-level unconditional transfer
+- theorem-level fibre-structure closure
 
 ## Outcome
 
@@ -231,7 +235,7 @@ The spectral admissibility framework is now:
 
 The admissibility condition is now:
 
-- fully structural
+- structural with respect to fibre cardinality
 - algebraically constrained
 - rank-invariant
 - unconditional with respect to the fibre structure of $\Pi$
@@ -254,19 +258,18 @@ Investigate possible higher symmetry frameworks.
 
 Test extension beyond SU(2) and Heisenberg graphs.
 
-### Numerical closure
+### Capacity-to-rate bridge
 
-Complete full pipeline validation of  
-$\delta_{\mathrm{pair}} \to \beta^*$.
+Construct a native growth process carrying the pair observable, or state an explicitly
+cross-substrate hypothesis for $\delta_{\mathrm{pair}} \to \beta^*$.
 
 ## Status
 
 The programme is now:
 
-- structurally closed
+- fibre-structure conditionality closed
 - independent of fibre assumptions
-- theoretically complete at the admissibility level
-- ready for numerical and phenomenological validation
+- explicit about the unresolved native capacity-to-rate step
 
 ## Repository Structure
 
@@ -281,8 +284,8 @@ paper/
 If you reference this work, please cite:
 
 J. Beau
-Vertical Non-Injectivity and the Stability of the Observable Rank:
-Closing the Unconditional Transfer $c_{\mathrm{BI}} \to \delta_{\mathrm{pair}} \to \beta^*$
+Observable-Rank Stability under Vertical Non-Injectivity:
+Closing the Fibre-Structure Conditionality in the Born–Infeld-to-Cascade Chain
 Zenodo, 2026.
 
 # Acknowledgements
