@@ -7,28 +7,31 @@ The paper now separates their fibre-structure closure from the independent Heise
 
 This work extends the **spectral admissibility sub-programme** by resolving
 the residual fibre-cardinality condition inherited from **O18** after the
-closures achieved by **O22** and **O23**:
+closure achieved by **O22** and the conditional carrier result of **O23**:
 
 > Does the admissibility mechanism depend on the cardinality of the fibres
 > of the projection $\Pi$, or only on the structure of its image?
 
 ## Context
 
-**O21–O23** established that:
+**O21–O23** provide the inputs:
 
-- the proposed fibre-level observable is the canonical pair quantity
+- the proposed pair-level observable is the canonical pair quantity
   $\sigma_{\mathrm{pair}}^{\mathrm{can}}(n)$
 - saturation occurs intrinsically on a BFS shell (**O22**, projection locking)
 - the threshold value  
   $\Sigma_c(n_3) = 3$  
-  is a structural consequence of quaternionic minimality (**O23**)
+  is a supplied selection rule: **O23** proves (Theorem 3.1) that the traceless sector of a
+  supplied spinor carrier $V_\rho \cong \mathbb{C}^2$ is $\mathfrak{su}(2)$, of real dimension
+  exactly 3, while the carrier selection and the identification of $\Sigma_c$ with that
+  dimension remain open
 
-However:
+Moreover:
 
-- **O18** required the strong condition that parity is the *only*
-  symmetry of $S_{\mathrm{BI}}$
-- this ensured that fibres are minimal: $\{\chi, -\chi\}$
-- the fibre-side observable-rank argument still depended on this assumption
+- the clause that parity is the *only* symmetry of $S_{\mathrm{BI}}$ is part of the open
+  fibre-identification problem of **O18** (Problem 2.8, Remark 2.9), not a theorem
+- if established, it would make parity fibres minimal: $\{\chi, -\chi\}$
+- the fibre-side observable-rank argument depended on this assumption
 
 This defines the scope of **O24**.
 
@@ -40,7 +43,8 @@ The key mechanism is the **verticality of admissible symmetries**:
 
 - any symmetry preserving Born–Infeld admissibility preserves the admissible sector
 - any new direction it generates must lie in this sector
-- the admissible neutral traceless sector has **maximal real rank 3** (O23)
+- under the supplied spinor carrier of O23, the admissible neutral traceless sector has
+  **real rank exactly 3** (O23 Theorem 3.1)
 
 Therefore:
 
@@ -76,7 +80,7 @@ The second case is impossible:
 
 - admissibility is preserved by $g$
 - any generated direction lies in the admissible sector
-- O23 proves this sector is **maximal of real rank 3**
+- under the supplied carrier, O23 (Theorem 3.1) bounds this sector at **real rank 3**
 
 Thus all admissible symmetries are vertical.
 
@@ -85,7 +89,7 @@ Thus all admissible symmetries are vertical.
 Any transversal symmetry would:
 
 - produce a fourth independent admissible direction
-- contradict quaternionic maximality
+- contradict the rank-three bound of the supplied carrier (O23 Theorem 3.1)
 
 Thus:
 
@@ -95,7 +99,8 @@ Thus:
 ### 4. Observable rank stability theorem
 
 *Theorem.*  
-The real rank of the admissible neutral traceless observable sector is:
+Under the supplied spinor carrier of O23, the real rank of the admissible neutral traceless
+observable sector is:
 
 $\dim_{\mathbb{R}}(\operatorname{Im}\Pi \cap \mathcal{N}_{\mathrm{trl}}) = 3$
 
@@ -104,8 +109,9 @@ independently of the cardinality of the fibres of $\Pi$.
 ### 5. Fibre-structure closure
 
 *Corollary.* The observable-rank condition supporting the fibre-side
-$c_{\mathrm{BI}} \to \delta_{\mathrm{pair}}$ segment holds unconditionally with respect to the
-fibre structure of $\Pi$, with no assumption on fibre size.
+$c_{\mathrm{BI}} \to \delta_{\mathrm{pair}}$ segment is insensitive to the
+fibre structure of $\Pi$, with no assumption on fibre size; it remains conditional on the
+supplied carrier and $\Sigma_c$ identification of O23.
 
 The separate $\delta_{\mathrm{pair}} \to \beta^*$ step is not derived natively on the Heisenberg substrate.
 Using $1/(\delta_{\mathrm{pair}}+\tfrac12)$ therefore remains a conditional cross-substrate
@@ -113,11 +119,12 @@ phenomenological prescription.
 
 ## Foundational Chain from the Substrate
 
-Within the stated Born--Infeld and quaternionic-maximality premises, the fibre-side argument is internal:
+Within the stated Born–Infeld premise and the supplied rank-three carrier of O23,
+the fibre-side argument is internal:
 
 Born–Infeld admissibility  
 $\to$ admissible sector invariance  
-$\to$ quaternionic maximality (O23)  
+$\to$ rank-three carrier (O23 Theorem 3.1, supplied carrier)  
 $\to$ exclusion of transversal directions  
 $\to$ verticality of symmetries  
 $\to$ rank invariance  
@@ -130,7 +137,7 @@ The chain does not produce a native pair-capacity growth carrier.
 
 **O24** performs the final closure of the fibre-level admissibility framework:
 
-- it removes the last conditional hypothesis (O18)
+- it removes the absence-of-further-symmetries clause (part of O18's open Problem 2.8)
 - it replaces fibre minimality with rank invariance
 - it establishes verticality as the correct structural condition
 
@@ -138,7 +145,7 @@ More precisely, the paper:
 
 - proves rank–kernel decoupling
 - proves verticality of admissible symmetries
-- excludes transversal admissible actions via maximality
+- excludes transversal admissible actions via the rank-three bound
 - establishes observable rank rigidity
 - removes dependence on fibre cardinality
 - closes the fibre-cardinality conditionality in the $c_{\mathrm{BI}} \to \delta_{\mathrm{pair}}$ segment
@@ -147,10 +154,10 @@ More precisely, the paper:
 
 ### Established input
 
-- fibre structure (**O18**)
+- Born–Infeld parity equivariance (**O18**; the fibre identification is open there)
 - canonical observable (**O19–O21**)
 - projection locking (**O22**)
-- quaternionic maximality (**O23**)
+- conditional rank-three carrier (**O23** Theorem 3.1, supplied spinor carrier)
 - Born–Infeld admissibility
 - Weil framework
 
@@ -175,7 +182,7 @@ More precisely, the paper:
 
 The conceptual shift is decisive:
 
-- **O18**: fibres must be minimal
+- absence-of-further-symmetries clause (O18 Problem 2.8): fibres must be minimal
 - **O24**: fibres can be arbitrarily large
 
 provided that:
@@ -196,20 +203,20 @@ The key insight is:
 
 **O24** completes the fibre-structure sequence:
 
-- **O18**: fibre structure
+- **O18**: parity equivariance, fibre identification stated as open
 - **O19**: canonical normalisation
 - **O20**: persistence criterion
 - **O21**: intrinsic saturation rank
 - **O22**: shell-level locking
-- **O23**: threshold dimension
+- **O23**: conditional threshold dimension (supplied carrier)
 - **O24**: rank stability under non-injectivity
 
 Thus:
 
 - the observable is fixed
 - the shell is derived
-- the threshold is explained
-- the fibre dependence is removed
+- the threshold is a supplied selection rule with a conditional dimension theorem
+- the fibre-cardinality dependence is removed (carrier and fibre hypotheses supplied)
 
 This closes the dependence on fibre cardinality, not the capacity-to-rate bridge.
 
@@ -226,19 +233,19 @@ This closes the dependence on fibre cardinality, not the capacity-to-rate bridge
 
 The spectral admissibility framework is now:
 
-- fibre-level grounded (**O18**)
+- parity-equivariant at the Born–Infeld level (**O18**), with the fibre identification open
 - amplitude-level canonical (**O19**)
 - saturation-level intrinsic (**O21**)
 - shell-level derived (**O22**)
-- threshold-level explained (**O23**)
-- fibre-independent (**O24**)
+- threshold-level conditional on the supplied carrier (**O23**)
+- fibre-cardinality independent (**O24**)
 
 The admissibility condition is now:
 
 - structural with respect to fibre cardinality
 - algebraically constrained
 - rank-invariant
-- unconditional with respect to the fibre structure of $\Pi$
+- insensitive to the fibre structure of $\Pi$ (conditional on the supplied carrier of O23)
 
 ## Residual Open Problems
 
@@ -267,8 +274,8 @@ cross-substrate hypothesis for $\delta_{\mathrm{pair}} \to \beta^*$.
 
 The programme is now:
 
-- fibre-structure conditionality closed
-- independent of fibre assumptions
+- fibre-structure conditionality reduced to the supplied carrier and fibre hypotheses
+- independent of fibre-cardinality assumptions
 - explicit about the unresolved native capacity-to-rate step
 
 ## Repository Structure

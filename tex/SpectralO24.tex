@@ -45,23 +45,26 @@
   \maketitle
 
   \begin{abstract}
-    O18 established the minimal fibre condition: Born--Infeld parity is the
-    only global symmetry of $\SBI[\chi]$, ensuring that each fibre of the non-injective projection
-    $\Pi$ is exactly $\{\chi, -\chi\}$.
-    O22 proved the shell-alignment conjecture of O21,
-    and O23 derived the threshold condition $\Sigma_c(n_3) = 3$ from the
-    quaternionic maximality of the admissible neutral traceless sector.
-    Together, these results show that the integer~$3$ in $\Sigma_c(n_3) = 3$ is a property of
+    O18 establishes Born--Infeld parity as an equivariant symmetry of $\SBI[\chi]$ and states
+    the identification of the parity orbit with a fibre of the non-injective projection $\Pi$
+    as an open problem; the hypothesis that parity is the only global symmetry of $\SBI$ is a
+    clause of that problem, not a theorem.
+    O22 proved the shell-alignment conjecture of O21.
+    O23 proves that the traceless sector of a supplied spinor carrier
+    $V_\rho \cong \mathbb{C}^2$ is $\mathfrak{su}(2)$, of real dimension exactly~$3$; the
+    carrier selection and the identification of $\Sigma_c$ with that dimension remain open, so
+    the threshold $\Sigma_c(n_3) = 3$ is a supplied selection rule.
+    Together, these results locate the integer~$3$ in $\Sigma_c(n_3) = 3$ as a property of
     $\operatorname{Im}\Pi \cap \Ntrl$, not of the cardinality of the fibres.
-    The condition of O18 is therefore stronger than necessary: the programme requires only that
+    The programme then requires only that
     any symmetry of $\SBI$ acts \emph{vertically} with respect to $\Pi$, i.e.\ does not enlarge
     the real rank of the admissible neutral traceless sector.
-    The present paper proves this \emph{verticality condition} directly from Born--Infeld
-    admissibility and the quaternionic maximality established in~O23, without requiring a
+    The present paper proves this \emph{verticality condition} from Born--Infeld
+    admissibility and the rank-three carrier supplied by~O23, without requiring a
     classification of $\mathcal{C}_{\mathrm{eff}}$.
-    As a corollary, the fibre-structure conditionality in the
-    $\cchi \to \dpair$ segment is closed: its observable rank is
-    independent of fibre cardinality.
+    As a corollary, conditional on the supplied carrier and fibre hypotheses, the
+    fibre-structure conditionality in the $\cchi \to \dpair$ segment reduces to those supplied
+    inputs: the observable rank is independent of fibre cardinality.
     This does not establish the separate
     $\dpair \to \bstar$ capacity-to-rate step, for which no native
     Heisenberg growth carrier is defined in the corpus.
@@ -72,7 +75,7 @@
   \medskip
   \noindent\textbf{Keywords.}
   Cosmochrony; spectral admissibility; non-injective projection; verticality condition;
-  observable rank stability; quaternionic maximality; Born--Infeld constraint;
+  observable rank stability; spinor carrier; Born--Infeld constraint;
   fibre structure; cascade exponent~$\bstar$
 
   \clearpage
@@ -82,24 +85,22 @@
   \section{Position of the Problem after O22--O23}
     \label{sec:position}
 
-    \subsection{What O18 required and why it was sufficient but not necessary}
+    \subsection{What O18 leaves open and what the mechanism requires}
       \label{sec:o18}
 
-      O18~\cite{Beau2026a22} derived the minimal fibre structure of the non-injective projection
-      $\Pi$ from the parity of the Born--Infeld action $\SBI[\chi]$.
-      Its central result (Theorem~3.3 of O18) states that the fibre of $\Pi$ above any
-      observable $o \in \Obs$ contains at least the orbit $\{\chi, -\chi\}$, and that this orbit
-      is the \emph{minimal} fibre under the assumption that Born--Infeld parity is the only global
-      effective symmetry of $\SBI$.
-      Remark~2.6 of O18 acknowledged explicitly that in an enriched framework admitting additional
-      symmetries, the fibre could be larger.
+      O18~\cite{Beau2026a22} establishes that the Born--Infeld action $\SBI[\chi]$ is even
+      (O18 Lemma~2.1) and that parity acting simultaneously on configuration and probe is an
+      equivariant symmetry of every Born--Infeld response (O18 Proposition~2.6).
+      Evenness does not force fixed-probe indiscernibility of $\chi$ and $-\chi$
+      (O18 Proposition~2.4), so the parity orbit $\{\chi, -\chi\}$ is not forced into the
+      fibres of $\Pi$: the fibre identification is a typed classification problem
+      (O18 Problem~2.8), and the assumption that parity is the only global effective symmetry
+      of $\SBI$ is a clause of that open problem (O18 Remark~2.9), not a theorem.
 
-      The condition ``parity is the only symmetry'' was introduced to guarantee minimality of the
-      fibre.
-      It was sufficient for the programme at the time: a minimal fibre $\{\chi, -\chi\}$ ensures
-      that the non-injectivity of $\Pi$ does not create additional observable directions beyond those
-      already present.
-      However, it is stronger than necessary.
+      The condition ``parity is the only symmetry'' would, if established, guarantee minimality
+      of a parity fibre $\{\chi, -\chi\}$, ensuring that the non-injectivity of $\Pi$ does not
+      create additional observable directions beyond those already present.
+      It is, however, stronger than what the present mechanism requires.
       The programme does not require small fibres; it requires that additional fibre structure, if
       present, be \emph{invisible at the level of admissible observables}.
 
@@ -114,9 +115,10 @@
       \]
       where $\Ntrl$ denotes the admissible neutral traceless sector.
       This is a property of the \emph{image} of $\Pi$, not of its fibres.
-      The integer~$3$ is the real dimension of the imaginary quaternionic subspace $\ImH$,
-      identified in O23 as the unique maximal admissible associative non-commutative structure
-      compatible with Born--Infeld parity.
+      The integer~$3$ is the real dimension of $\mathfrak{su}(2) \cong \ImH$, the traceless sector of a
+      supplied spinor carrier $V_\rho \cong \mathbb{C}^2$ (O23 Theorem~3.1); the selection of
+      that carrier and the identification of $\Sigma_c$ with its adjoint dimension are open
+      bridges of O23, so the rank-three input is a supplied hypothesis throughout this paper.
 
       Two configurations that lie in the same fibre of $\Pi$ are, by definition, mapped to the same
       observable.
@@ -139,8 +141,9 @@
 
       The \emph{image level} $\operatorname{Im}\Pi$ encodes the effective observable structure: the
       set of states that are distinguishable by at least one admissible observable.
-      Its intersection with $\Ntrl$ has real rank~$3$ by O23, and this rank is what enters the
-      threshold condition $\Sigma_c(n_3) = 3$.
+      Its intersection with $\Ntrl$ has real rank~$3$ under the supplied spinor-carrier
+      hypothesis of O23 (Theorem~3.1 there), and this rank is what enters the supplied
+      selection rule $\Sigma_c(n_3) = 3$.
       Its insertion into a capacity-to-rate law is a separate step.
 
       The key structural principle is:
@@ -156,7 +159,8 @@
       The present paper proves the \emph{verticality condition}: every symmetry of $\SBI$
       compatible with admissibility acts vertically with respect to $\Pi$, in the sense that it
       does not increase the real rank of $\operatorname{Im}\Pi \cap \Ntrl$.
-      The proof uses the quaternionic maximality established in O23 as its central ingredient and
+      The proof uses the rank-three carrier of O23 (Theorem~3.1 there, conditional on the
+      supplied spinor carrier) as its central ingredient and
       does not require a global classification of $\mathcal{C}_{\mathrm{eff}}$.
 
       The paper does not address the remaining open task of the programme: the extended numerical
@@ -167,29 +171,28 @@
   \section{The Observable Rank as the Invariant of the Chain}
     \label{sec:rank}
 
-    \subsection{Recapitulation: maximality from O23}
+    \subsection{Recapitulation: the conditional rank-three carrier of O23}
       \label{sec:o23recap}
 
       We recall the central result of O23~\cite{Beau2026a27}.
 
-      \begin{theorem}[O23 Theorem~3.2, Three stable directions from quaternionic maximality]
+      \begin{theorem}[O23 Theorem~3.1, Three neutral directions from a spinor carrier]
         \label{thm:o23}
-        Let $\Pi\colon \chi \to \Obs$ be a non-injective projection compatible with the
-        Born--Infeld constraint, admitting a Weil realisation on $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$.
-        The admissible neutral traceless sector is identified with $\ImH$.
-        The real rank of $\operatorname{Im}\Pi \cap \Ntrl$ is exactly~$3$.
-        Moreover, this rank is \emph{maximal}: $\ImH$ is the unique maximal admissible associative
-        non-commutative structure compatible with Born--Infeld parity, and no admissible realisation
-        of the neutral sector can have real rank greater than~$3$.
-        Consequently, $\Sigma_c(n_3) = 3$.
+        Suppose the admissible neutral sector is carried by an irreducible two-dimensional
+        unitary representation $V_\rho \cong \mathbb{C}^2$ (a supplied input).
+        Then its traceless sector is $\mathfrak{su}(2) \cong \ImH$, of real dimension
+        exactly~$3$.
       \end{theorem}
 
-      The maximality statement is essential.
-      O23 does not merely establish the \emph{existence} of a quaternionic structure of rank~$3$; it
-      establishes that no admissible structure compatible with Born--Infeld parity can have a
-      higher rank.
-      This maximality is what makes the verticality argument of Section~\ref{sec:verticality}
-      non-circular.
+      Two bridges remain open in O23: nothing derives the carrier $V_\rho \cong \mathbb{C}^2$
+      from Born--Infeld parity (carrier selection), and no theorem identifies $\Sigma_c$ with
+      $\dim \mathfrak{su}(V_\rho)$ (observable identification).
+      The threshold $\Sigma_c(n_3) = 3$ is therefore a supplied selection rule, definitional at
+      the level of O21, and every statement of the present paper that consumes the rank-three
+      input is conditional on the supplied carrier and on this identification.
+      Under the carrier hypothesis the rank cannot exceed~$3$ within $\mathfrak{su}(V_\rho)$,
+      which is what the verticality argument of Section~\ref{sec:verticality} uses; the
+      conditionality is inherited there.
 
     \subsection{Independence of the observable rank from the fibre structure}
       \label{sec:independence}
@@ -292,11 +295,11 @@
         Such a direction therefore belongs to the admissible neutral traceless sector characterised
         in Theorem~\ref{thm:o23}.
 
-        But Theorem~\ref{thm:o23} (O23) establishes that the admissible neutral traceless sector has
-        \emph{maximal} real rank~$3$: $\ImH$ is the unique maximal admissible associative
-        non-commutative structure compatible with Born--Infeld parity.
+        But under the supplied carrier hypothesis, Theorem~\ref{thm:o23} (O23) bounds the
+        admissible neutral traceless sector by $\mathfrak{su}(V_\rho) \cong \ImH$, of real
+        rank exactly~$3$.
         A transversal symmetry generating a 4th independent admissible direction would contradict
-        this maximality.
+        this bound.
         The contradiction shows that $g$ cannot act transversally.
         Therefore $g$ acts vertically.
         Thus, no admissible symmetry can increase the dimension of $\operatorname{Im}\Pi \cap \Ntrl$.
@@ -308,11 +311,14 @@
       The proof of Lemma~\ref{lem:verticality} proceeds by contradiction and applies uniformly to
       all $g \in \GBI$.
       For clarity, we spell out how the argument applies to the three natural candidate classes of
-      additional symmetries identified in O18 Remark~2.6 and O23 Section~5.2.
+      additional symmetries discussed in O18 (Problem~2.8 and Remark~2.9) and O23.
 
       \paragraph{Case 1: Parity $\chi \mapsto -\chi$.}
-        This is the symmetry established in O18~\cite{Beau2026a22}.
-        It maps the fibre $\{\chi, -\chi\}$ to itself and is therefore vertical by definition.
+        This is the equivariant symmetry established in O18~\cite{Beau2026a22}
+        (Proposition~2.6 there).
+        Under the hypothesis that the parity orbit $\{\chi, -\chi\}$ lies in a fibre of $\Pi$
+        (the open identification of O18 Problem~2.8), it maps that fibre to itself and is
+        vertical by definition.
         It does not generate any new direction in $\operatorname{Im}\Pi$.
 
       \paragraph{Case 2: Phase rotation $\chi \mapsto e^{i\theta}\chi$.}
@@ -323,7 +329,7 @@
         This class of symmetries does not arise.
         Even if the field were complexified, such a symmetry would act within fibres unless it generated
         new independent admissible neutral traceless directions; but any such directions would be
-        excluded by Lemma~\ref{lem:verticality} via the maximality of O23.
+        excluded by Lemma~\ref{lem:verticality} via the rank-three bound of O23.
 
       \paragraph{Case 3: Topological symmetries.}
         The Topological Invariants paper~\cite{Beau2026k} establishes that admissible configurations
@@ -343,8 +349,9 @@
 
     The proof of Lemma~\ref{lem:verticality} does not enumerate all possible symmetries of
     $\SBI$.
-    It instead uses the maximality of O23 as a structural obstruction: any transversal symmetry
-    would produce an admissible direction of rank greater than~$3$, which is impossible.
+    It instead uses the rank-three bound of O23 (conditional on the supplied carrier) as a
+    structural obstruction: any transversal symmetry
+    would produce an admissible direction of rank greater than~$3$, contradicting that bound.
     This argument is therefore independent of a global classification of $\mathcal{C}_{\mathrm{eff}}$
     and avoids the topological difficulty identified in Remark~4.2 of~\cite{Beau2026k}.
 
@@ -356,12 +363,14 @@
 
     \begin{theorem}[Observable rank stability]
       \label{thm:rankstability}
-      Under the Born--Infeld constraint and the Weil realisation on
-      $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$, the real rank of the admissible neutral traceless
+      Under the Born--Infeld constraint, the Weil realisation on
+      $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$, and the supplied spinor carrier
+      $V_\rho \cong \mathbb{C}^2$ of O23, the real rank of the admissible neutral traceless
       observable sector $\operatorname{Im}\Pi \cap \Ntrl$ is fixed to~$3$ as a structural invariant of
       the admissible sector, independently of the cardinality of the fibres of~$\Pi$.
-      Consequently, $\Sigma_c(n_3) = 3$ holds unconditionally with respect to the fibre
-      structure of~$\Pi$.
+      Consequently, the supplied selection rule $\Sigma_c(n_3) = 3$ is insensitive to the fibre
+      structure of~$\Pi$, though it remains conditional on the carrier and on the open
+      identification of $\Sigma_c$ with the carrier dimension.
       In particular, no admissible enlargement of $\ker\Pi$ can induce any increase in the
       observable rank.
     \end{theorem}
@@ -371,10 +380,12 @@
       $|\ker\Pi|$.
       By Lemma~\ref{lem:verticality}, every $g \in \GBI$ acts vertically and therefore does not
       increase this rank.
-      By Theorem~\ref{thm:o23} (O23), the rank is rigidly fixed to~$3$.
+      By Theorem~\ref{thm:o23} (O23, conditional on the supplied carrier), the rank is fixed
+      to~$3$.
       The combination of these three results gives the claim.
-      The threshold condition $\Sigma_c(n_3) = 3$ is the observable signature of this rank, as
-      established in O23~\cite{Beau2026a27} Section~4.3.
+      The reading of the threshold $\Sigma_c(n_3) = 3$ as the observable signature of this rank
+      is the supplied selection rule of O23~\cite{Beau2026a27}, whose observable identification
+      remains open there.
     \end{proof}
 
   \subsection{Fibre-structure closure and transfer boundary}
@@ -385,12 +396,14 @@
       The observable-rank condition supporting the fibre-side segment
       $\cchi \to \dpair$ is independent of the cardinality of the
       fibres of $\Pi$.
-      The conditionality of O18 Theorem~3.3 --- which required parity to be the only symmetry
-      of $\SBI$ --- is resolved with respect to this fibre-side result:
+      The absence-of-further-symmetries hypothesis --- parity as the only symmetry of $\SBI$,
+      a clause of the open fibre-identification problem (O18 Problem~2.8, Remark~2.9) --- is
+      not needed for this fibre-side result:
       it holds for any $\GBI$-symmetric non-injective projection,
       provided the verticality condition of Lemma~\ref{lem:verticality} is satisfied.
-      The verticality condition is itself a consequence of the Born--Infeld admissibility constraint
-      and the quaternionic maximality of O23; it requires no additional hypothesis.
+      The verticality condition follows from the Born--Infeld admissibility constraint
+      and the rank-three bound of O23; it therefore remains conditional on the supplied
+      spinor carrier of O23, and the fibre identification itself stays open.
     \end{corollary}
 
     \begin{proof}
@@ -399,10 +412,10 @@
       that $\Sigma_c(n_3) = 3$.
       O22~\cite{Beau2026a26} proved the shell-alignment conjecture (projection locking forces
       saturation onto a BFS shell).
-      Theorem~\ref{thm:rankstability} establishes $\Sigma_c(n_3) = 3$ unconditionally with respect
-      to the fibre structure.
-      These two conditions are therefore satisfied unconditionally with respect to fibre
-      structure, proving the stated rank stability.
+      Theorem~\ref{thm:rankstability} establishes that $\Sigma_c(n_3) = 3$ is insensitive to
+      the fibre structure, conditional on the supplied carrier of O23.
+      These two conditions are therefore satisfied independently of fibre
+      structure, under the same supplied hypotheses, proving the stated rank stability.
       They do not supply O21's independent cross-substrate growth condition, and hence do not
       establish a native $\dpair \to \bstar$ transfer~\cite{Beau2026sgn}.
     \end{proof}
@@ -424,9 +437,9 @@
   \subsection{What O24 closes and what it does not}
     \label{sec:closes}
 
-    The present paper closes the last fibre-structure conditionality in the
-    $\cchi \to \dpair$ segment.
-    Three fibre-side problems identified across O21--O23 are resolved:
+    The present paper reduces the fibre-structure conditionality in the
+    $\cchi \to \dpair$ segment to the supplied carrier and fibre hypotheses.
+    The dispositions of the fibre-side problems identified across O21--O23 are:
 
     \begin{center}
       \begin{tabular}{lll}
@@ -434,8 +447,9 @@
         Condition & Origin & Status after O24 \\
         \hline
         Shell-alignment conjecture & O21 Conj.~4.1 & Resolved by O22 \\
-        $\Sigma_c(n_3) = 3$ & O21 open problem~2 & Resolved by O23 \\
-        Parity = only symmetry of $\SBI$ & O18 Rem.~2.6 & Replaced by verticality, \\
+        $\Sigma_c(n_3) = 3$ & O21 open problem~2 & Supplied selection rule; \\
+        & & conditional in O23 (Thm~3.1) \\
+        Parity = only symmetry of $\SBI$ & O18 Prob.~2.8, Rem.~2.9 & Replaced by verticality, \\
         & & proved in O24 \\
         Native pair-capacity growth carrier & SGN & Not supplied by O22--O24 \\
         \hline
@@ -448,16 +462,17 @@
   \subsection{Relation to O18: necessary versus sufficient}
     \label{sec:o18relation}
 
-    The condition of O18 --- parity is the only global symmetry of $\SBI$ --- was a sufficient
-    condition for the programme at the time it was formulated.
-    It guaranteed that fibres are minimal, which implies in particular that no additional
-    observable directions are created.
+    The absence-of-further-symmetries clause --- parity as the only global symmetry of $\SBI$,
+    a clause of the open fibre-identification problem (O18 Problem~2.8, Remark~2.9) --- is a
+    sufficient condition for the programme.
+    It would guarantee that parity fibres are minimal, which implies in particular that no
+    additional observable directions are created.
 
     The present paper identifies the \emph{necessary} condition: verticality of all admissible
     symmetries.
     Verticality is strictly weaker than fibre minimality: a vertical symmetry may enlarge the
     fibre without changing the image.
-    The replacement of the sufficient condition (O18) by the necessary and sufficient condition
+    The replacement of the sufficient clause by the necessary and sufficient condition
     (O24) therefore strictly extends the scope of the fibre-side result: observable-rank stability
     holds not only when fibres are minimal, but whenever additional fibre structure acts vertically.
 
@@ -525,18 +540,20 @@
   The argument is non-classificatory.
   It does not enumerate all symmetries of $\SBI$ or classify the full space
   $\mathcal{C}_{\mathrm{eff}}$.
-  It uses a single structural obstruction: the quaternionic maximality established in
-  O23~\cite{Beau2026a27}, which ensures that no admissible direction of rank greater than~$3$
-  can exist.
+  It uses a single structural obstruction: the rank-three bound of
+  O23~\cite{Beau2026a27} (Theorem~3.1, conditional on the supplied spinor carrier), which
+  ensures that no admissible direction of rank greater than~$3$ can exist within the carrier.
 
   The conceptual reorientation relative to O18 is:
   \begin{quote}
-    \emph{The condition of O18 required fibres to be small.
+    \emph{The absence-of-further-symmetries clause would require fibres to be small.
     The present result shows that fibre size is physically irrelevant:
     non-injectivity affects degeneracy, not structure.}
   \end{quote}
 
-  O22, O23, and the present paper close the named fibre-structure conditionalities.
+  O22, O23, and the present paper reduce the named fibre-structure conditionalities to the
+  supplied carrier and fibre hypotheses; the carrier selection, the $\Sigma_c$ identification,
+  and the fibre identification of O18 Problem~2.8 remain open.
   They do not derive the separate Heisenberg capacity-to-rate bridge.
 
   \paragraph{Status update (O25 extension to $q = 601$).}
@@ -563,10 +580,10 @@
   \paragraph{A.1 Parity $\chi \mapsto -\chi$.}
     The Born--Infeld action is even in $\chi$: $\SBI[-\chi] = \SBI[\chi]$.
     Parity therefore belongs to $\GBI$.
-    For any observable $o = \Pi(\chi)$, the definition of the fibre ensures
-    $\Pi(-\chi) = \Pi(\chi) = o$ (since $-\chi$ and $\chi$ are identified by the Born--Infeld
-    indiscernability established in O18~\cite{Beau2026a22}).
-    Parity acts vertically.
+    Under the hypothesis that the parity orbit lies in a fibre of $\Pi$ (the open
+    fibre-identification problem of O18~\cite{Beau2026a22}, Problem~2.8; evenness alone does
+    not force it, O18 Proposition~2.4), $\Pi(-\chi) = \Pi(\chi) = o$.
+    Parity then acts vertically.
 
   \paragraph{A.2 Phase rotation U(1).}
     The substrate field $\chi\colon \mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z}) \to \mathbb{R}$ is
