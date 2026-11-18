@@ -114,8 +114,10 @@ fibre structure of $\Pi$, with no assumption on fibre size; it remains condition
 supplied carrier and $\Sigma_c$ identification of O23.
 
 The separate $\delta_{\mathrm{pair}} \to \beta^*$ step is not derived natively on the Heisenberg substrate.
-Using $1/(\delta_{\mathrm{pair}}+\tfrac12)$ therefore remains a conditional cross-substrate
-phenomenological prescription.
+Using $1/(\delta_{\mathrm{pair}}+\tfrac12)$ therefore remains a historical cross-substrate
+phenomenological prescription, not derived even given a carrier identification: a carrier identification can be
+an independent result, but on its own it does not establish the numerical equality or the cross-substrate
+prescription, since O6 yields only an upper bound.
 
 ## Foundational Chain from the Substrate
 

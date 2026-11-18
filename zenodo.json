@@ -3,5 +3,6 @@
   "web_url": "https://cosmochrony.org/science/spectral/program/o24/",
   "main_tex": "tex/SpectralO24.tex",
   "zenodo_id": 19386580,
-  "doi": "10.5281/zenodo.19386580"
+  "doi": "10.5281/zenodo.19386580",
+  "notes": "Version 1.4 (alpha-2). Identifies the interval [7.4, 10.6] reached by the raw O25 pair exponent as a historical comparison range, not an admissible or derived window. The verticality lemma, the observable-rank stability theorem, the finite-prime values and the cross-substrate status of the reciprocal are unchanged."
 }
