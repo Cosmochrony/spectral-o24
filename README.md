@@ -144,7 +144,8 @@ The chain does not produce a native pair-capacity growth carrier.
 
 ## Mathematical Role of O24
 
-**O24** performs the final closure of the fibre-level admissibility framework:
+**O24** closes the fibre-cardinality dependence of the fibre-level admissibility framework (the O21
+shell-alignment conjecture, which is not a fibre-structure condition, remains open):
 
 - it removes the absence-of-further-symmetries clause (part of O18's open Problem 2.8)
 - it replaces fibre minimality with rank invariance
