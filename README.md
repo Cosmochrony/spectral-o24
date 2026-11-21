@@ -21,7 +21,7 @@ saturation-depth result of **O22** and the conditional carrier result of **O23**
 
 **O21–O23** provide the inputs:
 
-- the pair-level observable is the canonical pair quantity proposed in **O19** (open tests)
+- the pair-level observable is the canonical pair quantity proposed in **O19** (not established as pipeline independent)
   $\sigma_{\mathrm{pair}}^{\mathrm{can}}(n)$
 - under O22's definition of physical realisability, a realisable Born–Infeld saturation depth lies on
   a BFS shell (**O22**, projection locking); O22 does not identify that depth with $n_3^{\mathrm{obs}}$,
@@ -165,7 +165,7 @@ More precisely, the paper:
 ### Established input
 
 - Born–Infeld parity equivariance (**O18**; the fibre identification is open there)
-- canonical observable proposed in **O19** (open tests), used in **O20–O21**
+- canonical observable proposed in **O19** (not established as pipeline independent), used in **O20–O21**
 - projection locking (**O22**)
 - conditional rank-three carrier (**O23** Theorem 3.1, supplied spinor carrier)
 - Born–Infeld admissibility
@@ -214,7 +214,7 @@ The key insight is:
 **O24** completes the fibre-structure sequence:
 
 - **O18**: parity equivariance, fibre identification stated as open
-- **O19**: canonical normalisation proposed, with open tests
+- **O19**: canonical normalisation proposed, not established as pipeline independent
 - **O20**: persistence criterion
 - **O21**: crossing rank free of fitted parameters, for a fixed normalisation
 - **O22**: shell-level locking
@@ -244,7 +244,7 @@ This closes the dependence on fibre cardinality, not the capacity-to-rate bridge
 The spectral admissibility framework is now:
 
 - parity-equivariant at the Born–Infeld level (**O18**), with the fibre identification open
-- amplitude normalisation proposed, with open tests (**O19**)
+- amplitude normalisation proposed, not established as pipeline independent (**O19**)
 - free of fitted parameters at the saturation-rank level, for a fixed normalisation (**O21**)
 - saturation depth locked to BFS shells within the stated model (**O22**)
 - threshold-level conditional on the supplied carrier (**O23**)
