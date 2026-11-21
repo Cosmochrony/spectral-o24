@@ -4,5 +4,5 @@
   "main_tex": "tex/SpectralO24.tex",
   "zenodo_id": 19386580,
   "doi": "10.5281/zenodo.19386580",
-  "notes": "Version 1.4 (alpha-2). Identifies the interval [7.4, 10.6] reached by the raw O25 pair exponent as a historical comparison range, not an admissible or derived window. The verticality lemma, the observable-rank stability theorem, the finite-prime values are unchanged. The README also clarifies that a carrier identification alone does not derive reciprocal equality under O6’s premises."
+  "notes": "Version 1.5. O22 1.19 withdraws the corollary that established the O21 shell-alignment conjecture. The proof of Corollary 4.2 now rests on the rank-stability theorem alone; the shell-alignment conjecture remains open and is not part of it. The verticality lemma and the rank-stability theorem are unchanged."
 }

@@ -46,7 +46,7 @@
   \small Independent Researcher\\
   \small \href{mailto:jerome.beau@cosmochrony.org}{jerome.beau@cosmochrony.org}}
 
-  \date{2026\\Version 1.4}
+  \date{2026\\Version 1.5}
 
   \maketitle
 
@@ -55,7 +55,9 @@
     the identification of the parity orbit with a fibre of the non-injective projection $\Pi$
     as an open problem; the hypothesis that parity is the only global symmetry of $\SBI$ is a
     clause of that problem, not a theorem.
-    O22 proved the shell-alignment conjecture of O21.
+    O22 proves, under its definition of physical realisability, that a realisable Born--Infeld
+    saturation depth lies on a BFS shell; it does not establish the shell-alignment conjecture
+    of O21, which remains open.
     O23 proves that the traceless sector of a supplied spinor carrier
     $V_\rho \cong \mathbb{C}^2$ is $\mathfrak{su}(2)$, of real dimension exactly~$3$; the
     carrier selection and the identification of $\Sigma_c$ with that dimension remain open, so
@@ -171,8 +173,9 @@
 
       The paper does not address the remaining open task of the programme: the extended numerical
       campaign at large primes $q \in \{101, 151, 211\}$ across multiple conjugate pairs, required
-      to confirm the shell-alignment prediction and reduce the residual distance
-      $\mathrm{dist}(n_3^{\mathrm{obs}}, \mathbb{Z}) \approx 0.20$ observed at $q = 61$.
+      to test the open shell-alignment conjecture of O21, for which the distance
+      $\mathrm{dist}(n_3^{\mathrm{obs}}, \mathbb{Z}) \approx 0.20$ observed at $q = 61$ is the
+      single available data point.
 
   \section{The Observable Rank as the Invariant of the Chain}
     \label{sec:rank}
@@ -414,14 +417,16 @@
 
     \begin{proof}
       The fibre-side conditions were formulated in
-      O21~\cite{Beau2026a25} Theorem~5.1, under the shell-alignment conjecture and the condition
+      O21~\cite{Beau2026a25} under the shell-alignment conjecture and the condition
       that $\Sigma_c(n_3) = 3$.
-      O22~\cite{Beau2026a26} proved the shell-alignment conjecture (projection locking forces
-      saturation onto a BFS shell).
       Theorem~\ref{thm:rankstability} establishes that $\Sigma_c(n_3) = 3$ is insensitive to
       the fibre structure, conditional on the supplied carrier of O23.
-      These two conditions are therefore satisfied independently of fibre
-      structure, under the same supplied hypotheses, proving the stated rank stability.
+      This proves the stated independence of the observable-rank condition from fibre
+      cardinality, under the same supplied hypotheses.
+      The shell-alignment conjecture is not established:
+      O22~\cite{Beau2026a26} places a realisable Born--Infeld saturation depth on a BFS shell,
+      but does not identify that depth with $n_3^{\mathrm{obs}}$ (O22 Remark~5.1), so the
+      conjecture remains open and is not part of the present corollary.
       They do not supply O21's independent cross-substrate growth condition, and hence do not
       establish a native $\dpair \to \bstar$ transfer~\cite{Beau2026sgn}.
     \end{proof}
@@ -452,7 +457,7 @@
         \hline
         Condition & Origin & Status after O24 \\
         \hline
-        Shell-alignment conjecture & O21 Conj.~4.1 & Resolved by O22 \\
+        Shell-alignment conjecture & O21 Conj.~4.1 & Open (O22 Cor.~5.1 withdrawn) \\
         $\Sigma_c(n_3) = 3$ & O21 open problem~2 & Supplied selection rule; \\
         & & conditional in O23 (Thm~3.1) \\
         Parity = only symmetry of $\SBI$ & O18 Prob.~2.8, Rem.~2.9 & Replaced by verticality, \\

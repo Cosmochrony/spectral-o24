@@ -2,12 +2,17 @@ This repository contains the source of the **O24 Cosmochrony paper**
 *Observable-Rank Stability under Vertical Non-Injectivity:
 Closing the Fibre-Structure Conditionality in the Born–Infeld-to-Cascade Chain*.
 
+**Version 1.5.** O22 no longer counts as establishing the O21 shell-alignment conjecture: O22 1.19
+withdraws its Corollary 5.1, which identified the observable rank $n_3^{\mathrm{obs}}$ with the
+Born–Infeld saturation depth. The proof of Corollary 4.2 now rests on the rank-stability theorem alone;
+the shell-alignment conjecture remains open and is not part of it.
+
 **Version 1.2.0.** The verticality lemma and observable-rank stability theorem are unchanged.
 The paper now separates their fibre-structure closure from the independent Heisenberg capacity-to-rate step.
 
 This work extends the **spectral admissibility sub-programme** by resolving
 the residual fibre-cardinality condition inherited from **O18** after the
-closure achieved by **O22** and the conditional carrier result of **O23**:
+saturation-depth result of **O22** and the conditional carrier result of **O23**:
 
 > Does the admissibility mechanism depend on the cardinality of the fibres
 > of the projection $\Pi$, or only on the structure of its image?
@@ -18,7 +23,9 @@ closure achieved by **O22** and the conditional carrier result of **O23**:
 
 - the proposed pair-level observable is the canonical pair quantity
   $\sigma_{\mathrm{pair}}^{\mathrm{can}}(n)$
-- saturation occurs intrinsically on a BFS shell (**O22**, projection locking)
+- under O22's definition of physical realisability, a realisable Born–Infeld saturation depth lies on
+  a BFS shell (**O22**, projection locking); O22 does not identify that depth with $n_3^{\mathrm{obs}}$,
+  so the O21 shell-alignment conjecture remains open
 - the threshold value  
   $\Sigma_c(n_3) = 3$  
   is a supplied selection rule: **O23** proves (Theorem 3.1) that the traceless sector of a
@@ -208,7 +215,7 @@ The key insight is:
 - **O18**: parity equivariance, fibre identification stated as open
 - **O19**: canonical normalisation
 - **O20**: persistence criterion
-- **O21**: intrinsic saturation rank
+- **O21**: crossing rank free of fitted parameters, for a fixed normalisation
 - **O22**: shell-level locking
 - **O23**: conditional threshold dimension (supplied carrier)
 - **O24**: rank stability under non-injectivity
@@ -216,7 +223,7 @@ The key insight is:
 Thus:
 
 - the observable is fixed
-- the shell is derived
+- the saturation depth lies on a shell within O22's model; the O21 shell-alignment conjecture is open
 - the threshold is a supplied selection rule with a conditional dimension theorem
 - the fibre-cardinality dependence is removed (carrier and fibre hypotheses supplied)
 
@@ -237,8 +244,8 @@ The spectral admissibility framework is now:
 
 - parity-equivariant at the Born–Infeld level (**O18**), with the fibre identification open
 - amplitude-level canonical (**O19**)
-- saturation-level intrinsic (**O21**)
-- shell-level derived (**O22**)
+- free of fitted parameters at the saturation-rank level, for a fixed normalisation (**O21**)
+- saturation depth locked to BFS shells within the stated model (**O22**)
 - threshold-level conditional on the supplied carrier (**O23**)
 - fibre-cardinality independent (**O24**)
 
@@ -253,7 +260,7 @@ The admissibility condition is now:
 
 ### Shell selection
 
-Determine which shell $n_3$ is dynamically selected.
+Determine which shell is dynamically selected for the Born–Infeld saturation depth.
 
 ### Large-$q$ regime
 
