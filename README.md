@@ -21,7 +21,7 @@ saturation-depth result of **O22** and the conditional carrier result of **O23**
 
 **O21–O23** provide the inputs:
 
-- the proposed pair-level observable is the canonical pair quantity proposed in **O19** (open tests)
+- the pair-level observable is the canonical pair quantity proposed in **O19** (open tests)
   $\sigma_{\mathrm{pair}}^{\mathrm{can}}(n)$
 - under O22's definition of physical realisability, a realisable Born–Infeld saturation depth lies on
   a BFS shell (**O22**, projection locking); O22 does not identify that depth with $n_3^{\mathrm{obs}}$,
